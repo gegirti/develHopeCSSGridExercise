@@ -1,0 +1,55 @@
+section{
+    
+    border-radius: 5px;
+    width: 350px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+}
+div {
+    border: 1px solid rgb(123, 146, 163);
+    text-align: center;
+    
+}
+section.grid {
+    background-color: rgb(236, 240, 243);
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "result result result result"
+    "operator1 operator2 operator3 operator4"
+    ". . . sign"
+    ". . . sign"
+    ". . . sign"
+    ". . . sign";
+    min-height: 360px;
+}
+#result {
+    background-color: rgb(57, 67, 72);
+    color: white;
+    grid-area: result;
+    text-align: right;
+    font-size: 32px;
+}
+#operator1 {
+    background-color: rgb(203, 215, 223);
+    grid-area: operator1;
+}
+#operator2 {
+    background-color: rgb(203, 215, 223);
+    grid-area: operator2;
+}
+#operator3 {
+    background-color: rgb(203, 215, 223);
+    grid-area: operator3;
+}
+#operator4 {
+    background-color: rgb(203, 215, 223);
+    grid-area: operator4;
+}
+#sign {
+    background-color: rgb(255, 101, 110);
+    grid-area: sign;
+    
+}
